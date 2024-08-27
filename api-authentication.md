@@ -14,10 +14,7 @@ Skyflow's bearer tokens match the RFC's [Authorization Bearer Token Header](http
   - curl
 - A bearer token to authenticate API calls. For a short-lived token, use the following process. To generate tokens from service accounts, see Authenticate.
 
-- Skyflow account, vault, and workspace details:
-
-  1. In Studio, click vault menu icon > View vault details.
-  1. Note your Account ID, Vault ID, and Vault URL values.
+- Your Skyflow account, vault, and workspace details
 
 - Your environment's Management API URL:
 
