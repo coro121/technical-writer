@@ -4,29 +4,29 @@ The Data Distribution Service (DDS) Modular kit provides robust computing and st
 
 This guide demonstrates how to configure an 8-node cluster.
 
-## Hardware prerequisites
+## Prerequisites
 
 - Deployment laptop
 - S4112-T switch
 - S4112-F switch
 - 5-port gigabit ethernet switch
 - Thunderbolt adapter
-- Gigamon network tap
-- Nodes (8)
-- Cat 6 cable (9)
-- QSFP breakout cable (4)
-- SFP DAC cable (3)
-- 100G cable
+- Gigamon Network Tap
+- (8) Nodes
+- (9) CAT6 cables
+- (4) QSFP breakout cables
+- (3) SFP DAC cables
+- (1) 100G cable
 
 ## Connect the T and F switches
 
-The toggle switch (T) allows you to establish a persistent on/off state, making it ideal for long-term control and isolation tasks. In contrast, the momentary switch (F) is designed for temporary connections, enabling quick, on-demand actions such as signal routing or temporary network configurations. Together, these switches provide flexible and precise control over network traffic, ensuring efficient data flow and enhancing your network infrastructure's overall reliability and security.
+The toggle switch (T) maintains a persistent on/off state for long-term control, while the momentary switch (F) allows quick, temporary connections for tasks like signal routing. Together, they offer flexible and precise network traffic control, improving efficiency and enhancing overall reliability and security.
 
 ### Install the T switch
 
 Perform the following actions to connect an operator switch and eight nodes to the T switch.
 
-1. Connect one end of a **CAT6** cable into **port 1** of the T switch. Then, connect the other end to **port 1** of the **Tripp Lite switch**.
+1. Connect one end of a **CAT6** cable into **port 1** of the T switch. Then, connect the other end to **port 1** of the **Tripp Lite (operator) switch**.
 
     ![Connect the T switch to operator switch.](https://user-images.githubusercontent.com/10658186/266861597-068726ea-a73b-4dac-970e-1312fcd4d21d.png)
 
@@ -72,52 +72,52 @@ Perform the following steps to connect to the Gigamon network tap.
 
 ## Start the system power-up sequence
 
-You must perform the following steps in sequential order to start your system.
+Perform the following steps in sequential order to start your system.
 
 1. Power on the switches, deployment laptop, and nodes.
 
-**Note**: Nodes can take up to five minutes to load.
+    **Note**: Nodes can take up to five minutes to load.
 
-1. Connect to a node using an SSH client.
+2. Connect to a node using an SSH client.
 
-2. Run the Gluster command-line tool to view the list of available volumes:
+3. Run the Gluster command-line tool to view the list of available volumes:
 
     ```bash
     [root@node1 ~]# gluster
     gluster> volume start <volume name>
     ```
 
-3. In separate terminal tabs, use SSH to connect to the remaining nodes.
+4. In separate terminal tabs, use SSH to connect to the remaining nodes.
 
-4. Run the following step to enter maintenance mode:
+5. Run the following step to enter maintenance mode:
 
     ```bash
     systemctl start ovirt-ha-broker; systemctl start ovirt-ha-agent
     ```
 
-5. Run the following step to exit maintenance mode for the hosted engine:
+6. Run the following step to exit maintenance mode for the hosted engine:
 
     ```bash
     hosted-engine --set-maintenance --mode=none
     ```
 
-6. Run the following step to verify that the hosted engine virtual machine is loading:
+7. Run the following step to verify that the hosted engine virtual machine is loading:
 
     ```bash
     hosted-engine --vm-status
     ```
 
-7. In a web browser, sign in to the hosted engine by entering `[kit number]acme.mil` in the address bar.
+8. In a web browser, sign in to the hosted engine by entering `[kit number]acme.mil` in the address bar.
 
-8. Click **Storage > Domains**.
+9. Click **Storage > Domains**.
 
-9. Start all virtual machines by clicking **Computer** > **Virtual Machines**.
+10. Start all virtual machines by clicking **Computer** > **Virtual Machines**.
 
-10. Launch each virtual machine. Then, click **Run**.
+11. Launch each virtual machine. Then, click **Run**.
 
 ## System power-down sequence
 
-The power-down sequence depends on the operating system and platform in the DDS kit. Adapt the following instructions for your specific platform.
+The power-down sequence depends on the operating system and platform of your DDS kit. Adapt the following instructions for your specific platform.
 
 1. In a web browser, sign in to the hosted engine. Then, click **Administration Portal**.
 
@@ -159,12 +159,6 @@ The power-down sequence depends on the operating system and platform in the DDS 
 10. Run the Gluster command-line tool to view a list of volumes:
 
     ```bash
-    gluster
-    ```
-
-11. Run the following step to view all volumes:
-
-    ```bash
     [root@node1 ~]# gluster
     gluster > volume list
     data
@@ -172,13 +166,13 @@ The power-down sequence depends on the operating system and platform in the DDS 
     vmstore
     ```
 
-12. Run the following step to stop each volume:
+11. Run the following step to stop each volume:
 
     ```bash
     volume stop <volume name>
     ```
 
-13. Turn off each system.
+12. Turn off each system.
 
 ## Next steps
 
