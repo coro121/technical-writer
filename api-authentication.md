@@ -1,10 +1,3 @@
----
-published: true
-title: Authenticate
-docType: guide
-date: 2023-11-01
----
-
 # Authenticate
 
 To use Skyflow's [Management API](/management/), [Data API](/record/), or [SDKs](/sdks/), you need a JWT bearer token (recommended) or an API Key to authenticate your API calls. JWT Bearer tokens and API keys allow scoped and permission-sensitive access to your account and the vaults it has. JWT Bearer tokens are time-limited, and API keys are long-lived.
