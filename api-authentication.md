@@ -192,7 +192,7 @@ public class TokenGenerationUtil {
 }
 ```
 
-Node.js
+**Node.js**
 
 The Node.js SDK has two functions that can take _credentials.json_ and return a bearer token:
 
