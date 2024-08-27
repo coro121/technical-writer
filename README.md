@@ -21,7 +21,7 @@ Skyflow is a data privacy platform that offers secure storage and handling of se
 
 Lucidworks provides an AI-powered search and data discovery platform that helps organizations enhance customer experiences and drive business insights. Their solutions leverage machine learning and natural language processing to improve search relevance, personalization, and data analytics across various enterprise applications.
 
-- [Fields Editor UI](https://doc.lucidworks.com/fusion/5.5/nmi4j0/fields-editor-ui)
+- [Fields Editor UI (DocSite version)](https://doc.lucidworks.com/fusion/5.5/nmi4j0/fields-editor-ui)
 
 ### Genesis Consulting
 
