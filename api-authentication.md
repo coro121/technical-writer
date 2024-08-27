@@ -17,7 +17,7 @@ Skyflow's bearer tokens match the RFC's [Authorization Bearer Token Header](http
 - Skyflow account, vault, and workspace details:
 
   1. In Studio, click vault menu icon > View vault details.
-  2. Note your Account ID, Vault ID, and Vault URL values.
+  1. Note your Account ID, Vault ID, and Vault URL values.
 
 - Your environment's Management API URL:
 
