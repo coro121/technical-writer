@@ -48,13 +48,13 @@ Perform the following actions to connect a deployment laptop, Thunderbolt adapte
 
 1. Connect the **Thunderbolt adapter** cable to the **deployment laptop**.
 
-2. Plug one end of the **SFP DAC** cable into **port 1**, and plug the other end into the **Thunderbolt adapter**.
+2. Connect one end of the **SFP DAC** cable into **port 1**. Then, connect the other end into the **Thunderbolt adapter**.
 
-3. Connect a **QSFP breakout** cable from **port 13** to the **eno 8** port on each of the four nodes.
+3. Connect the third **QSFP breakout** cable from **port 13** to the **eno 8** port on each of the four nodes.
 
     ![Third of four QSFP breakout cables connecting port 13 to the eno 8 port on four nodes.](https://user-images.githubusercontent.com/10658186/266861685-8bf1bf80-566a-4458-b94e-64ba0da867bf.png)
 
-4. Connect another **QSFP breakout** cable from **port 14** to the **eno 8** port on each of the remaining four nodes.
+4. Connect the last **QSFP breakout** cable from **port 14** to the **eno 8** port on each of the remaining four nodes.
 
     ![Last remaining QSFP breakout cable connecting port 14 to the eno 8 port on the remaining four nodes.](https://user-images.githubusercontent.com/10658186/266861698-6dc86f19-f56b-4475-b869-7cd66e1e49dd.png)
 
