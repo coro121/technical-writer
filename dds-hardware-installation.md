@@ -66,9 +66,9 @@ Perform the following actions to connect a deployment laptop, Thunderbolt adapte
 
 Perform the following steps to connect to the Gigamon network tap.
 
-1. Plug the **SFP DAC** cable into **port A** of the **Monitor Tool** section. Then, connect the other end to a node's **eno 8** port.
+1. Connect the **SFP DAC** cable into **port A** of the **Monitor Tool** section. Then, connect the other end to a node's **eno 8** port.
 
-2. Plug the remaining **SFP DAC** cable into **port B** of the **Monitor Tool**. Then, connect the other end to a node's **eno 7** port.
+2. Connect the remaining **SFP DAC** cable into **port B** of the **Monitor Tool**. Then, connect the other end to a node's **eno 7** port.
 
 ## Start the system power-up sequence
 
