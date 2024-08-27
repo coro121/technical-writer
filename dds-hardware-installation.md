@@ -28,19 +28,19 @@ Perform the following actions to connect an operator switch and eight nodes to t
 
 1. Connect one end of a **CAT6** cable into **port 1** of the T switch. Then, connect the other end to **port 1** of the **Tripp Lite (operator) switch**.
 
-    ![Connect the T switch to operator switch.](https://user-images.githubusercontent.com/10658186/266861597-068726ea-a73b-4dac-970e-1312fcd4d21d.png)
+    ![CAT6 cable connecting port 1 of the T switch to the Tripp Lite switch.](https://user-images.githubusercontent.com/10658186/266861597-068726ea-a73b-4dac-970e-1312fcd4d21d.png)
 
-2. Connect one end of the remaining **CAT6** cables to ports **5 through 12**. Then, connect the other ends to the **IPMI** ports on each of the **nodes**.
+2. Connect one end of the remaining (8) **CAT6** cables to ports **5 through 12**. Then, connect the other ends to the **IPMI** ports on each of the **nodes**.
 
-    ![Connect the T switch to 8 nodes.](https://user-images.githubusercontent.com/10658186/266861605-1f488f00-2727-4f07-96a1-f3fd2a811866.png)
+    ![Remaining CAT6 cables connecting to the IPMI ports on each node.](https://user-images.githubusercontent.com/10658186/266861605-1f488f00-2727-4f07-96a1-f3fd2a811866.png)
 
 3. Connect one **QSFP breakout** cable from **port 13** to **eno 7** ports on each of the four nodes.
 
-    ![Connect to eno 7 on four nodes.](https://user-images.githubusercontent.com/10658186/266861621-a21fb62e-913f-4a84-9b31-56f0c3b20941.png)
+    ![One of four QSFP breakout cables connecting port 13 to eno 7 ports on four nodes.](https://user-images.githubusercontent.com/10658186/266861621-a21fb62e-913f-4a84-9b31-56f0c3b20941.png)
 
 4. Connect a second **QSFP breakout** cable from **port 14** to the **eno 7** ports on each of the remaining four nodes.
 
-    ![Connect to eno 7 on remaining four nodes](https://user-images.githubusercontent.com/10658186/266861641-c9789f25-f7fe-4a71-94c9-91dce62e264a.png)
+    ![Second of four QSFP breakout cables connecting port 14 to eno 7 ports on the remaining four nodes.](https://user-images.githubusercontent.com/10658186/266861641-c9789f25-f7fe-4a71-94c9-91dce62e264a.png)
 
 ### Install the F switch
 
@@ -52,15 +52,15 @@ Perform the following actions to connect a deployment laptop, Thunderbolt adapte
 
 3. Connect a **QSFP breakout** cable from **port 13** to the **eno 8** port on each of the four nodes.
 
-    ![Connect the f-switch to eno 8 on four nodes](https://user-images.githubusercontent.com/10658186/266861685-8bf1bf80-566a-4458-b94e-64ba0da867bf.png)
+    ![Third of four QSFP breakout cables connecting port 13 to the eno 8 port on four nodes.](https://user-images.githubusercontent.com/10658186/266861685-8bf1bf80-566a-4458-b94e-64ba0da867bf.png)
 
-4. Connect a **QSFP breakout** cable from **port 14** to the **eno 8** port on each of the remaining four nodes.
+4. Connect another **QSFP breakout** cable from **port 14** to the **eno 8** port on each of the remaining four nodes.
 
-    ![Connect the f-switch to eno 8 on the remaining four nodes.](https://user-images.githubusercontent.com/10658186/266861698-6dc86f19-f56b-4475-b869-7cd66e1e49dd.png)
+    ![Last remaining QSFP breakout cable connecting port 14 to the eno 8 port on the remaining four nodes.](https://user-images.githubusercontent.com/10658186/266861698-6dc86f19-f56b-4475-b869-7cd66e1e49dd.png)
 
 5. Connect the **100G** cable from **port 15** on the **F** switch to **port 15** on the **T** switch.
 
-    ![Connect the F switch to the T switch](https://user-images.githubusercontent.com/10658186/266861727-275c3299-0834-42ff-a6f6-35afa919632c.png)
+    ![100G cable connecting port 15 on the F switch to port 15 on the T switch.](https://user-images.githubusercontent.com/10658186/266861727-275c3299-0834-42ff-a6f6-35afa919632c.png)
 
 ## Connect the Gigamon network tap
 
