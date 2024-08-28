@@ -33,6 +33,6 @@ During an audit of the existing style guide for a SharePoint knowledge base, I c
 
 ### Sealing Technologies
 
-Sealing Technologies is a cybersecurity company that focuses on providing advanced solutions and services to secure critical infrastructure and mission-critical systems, primarily for defense and government sectors. Their offerings include innovative tools for network defense, threat detection, incident response, and compliance with security regulations, helping organizations enhance their cybersecurity posture.
+Sealing Technologies is a cybersecurity company that focuses on providing advanced solutions and services to secure critical infrastructure and mission-critical systems, primarily for defense and government sectors.
 
 - [DDS Hardware Installation and Configuration Manual](https://github.com/coro121/technical-writer/blob/main/dds-hardware-installation.md)
