@@ -25,7 +25,9 @@ Lucidworks provides an AI-powered search and data discovery platform that helps 
 
 ### Genesis Consulting
 
-During an audit of the existing style guide for a SharePoint knowledge base, I created an overview about accessible rich internet applications attributes (ARIA).
+Genesis Consulting LLC is a management consulting firm that specializes in digital transformation, enterprise resource planning (ERP), and project management services. I worked on a contract for the US Department of Agriculture.
+
+During an audit of the existing style guide for a SharePoint knowledge base, I created internal documentation about accessible rich internet applications attributes (ARIA).
 
 - [WAI-ARIA](https://github.com/coro121/technical-writer/blob/main/wai-aria.md)
 
